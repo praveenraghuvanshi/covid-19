@@ -5,10 +5,20 @@
 ### COVID-19 Exploratory Data Analysis using ML.Net(C#)
 
 - In this notebook we'll perform analysis on COVID-19 dataset and visualize the trends of virus spread in various countries
+
 - We'll be using ML.Net, a Machine Learning framework from Microsoft for .Net developers. The programming language used is C#
+
 - We'll explore recently introduced support for C# on Jupyter Notebook and features such as DataFrame.
+
 - Notebook Link: [COVID-19-mlnet.ipynb](./COVID-19-mlnet.ipynb)
-- [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/praveenraghuvanshi1512/covid-19/data-analysis)
+
+- [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/praveenraghuvanshi1512/covid-19/master?filepath=COVID-19-mlnet.ipynb)
+
+  
+
+- 
+
+  
 
 Please share your feedback/suggestion
 
