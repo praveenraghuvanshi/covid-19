@@ -7,7 +7,8 @@
 - In this notebook we'll perform analysis on COVID-19 dataset and visualize the trends of virus spread in various countries
 - We'll be using ML.Net, a Machine Learning framework from Microsoft for .Net developers. The programming language used is C#
 - We'll explore recently introduced support for C# on Jupyter Notebook and features such as DataFrame.
-- [COVID-19-mlnet.ipynb](./COVID-19-mlnet.ipynb)
+- Notebook Link: [COVID-19-mlnet.ipynb](./COVID-19-mlnet.ipynb)
+- Binder Link: https://gesis.mybinder.org/binder/v2/gh/praveenraghuvanshi1512/covid-19/ba17d76dca3b439bec82ae875ee3397c59b9df48
 
 Please share your feedback/suggestion/correction
 
