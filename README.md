@@ -12,6 +12,8 @@
 
 - Notebook Link: [COVID-19-mlnet.ipynb](./COVID-19-mlnet.ipynb)
 
+- [NBViewer Link](https://nbviewer.jupyter.org/github/praveenraghuvanshi1512/covid-19/blob/fb4c762284997a035d1892310e27ab815d43ac5b/COVID-19-mlnet.ipynb)
+
 - [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/praveenraghuvanshi1512/covid-19/master) File is located at Notebooks/COVID-19-mlnet.ipynb
 
   
