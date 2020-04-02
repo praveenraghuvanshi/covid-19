@@ -12,11 +12,7 @@
 
 - Notebook Link: [COVID-19-mlnet.ipynb](./COVID-19-mlnet.ipynb)
 
-- [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/praveenraghuvanshi1512/covid-19/master)
-
-  
-
-- 
+- [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/praveenraghuvanshi1512/covid-19/master) File is located at Notebooks/COVID-19-mlnet.ipynb
 
   
 
