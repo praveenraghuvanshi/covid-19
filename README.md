@@ -2,25 +2,19 @@
 - As per [Wiki](https://en.wikipedia.org/wiki/Coronavirus_disease_2019) **Coronavirus disease 2019** (**COVID-19**) is an infectious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). The disease was first identified in 2019 in Wuhan, the capital of China's Hubei province, and has since spread globally, resulting in the ongoing 2019–20 coronavirus pandemic.
 - The virus had caused a pandemic across the globe and spreading/affecting most of the nations/lives. 
 
-### COVID-19 Exploratory Data Analysis using .Net DataFrame API (C#)
+### COVID-19 Exploratory Data Analysis using .Net  Framework (C#)
 
-- In this notebook we'll perform analysis on COVID-19 dataset and visualize the trends of virus spread in various countries
+- In this tutorial, we'll perform analysis on COVID-19 dataset and visualize the trends of virus spread in various countries
+- Tutorial is divided into below parts
+  - **Part-1:** [COVID-19 Data Analysis using .Net DataFrame API](https://github.com/praveenraghuvanshi1512/covid-19/blob/Part-2/Part-1-COVID-19-mlnet-analysis.ipynb)
+  - **Part-2:** [COVID-19 Prediction using ML.Net framework](https://github.com/praveenraghuvanshi1512/covid-19/blob/Part-2/Part-2-COVID-19-mlnet-prediction.ipynb)
+- We'll leverage recently introduced support for C# in Jupyter Notebook
 
-- We'll be using Dataframe API from .Net and the programming language used is C#
+Please share your feedback/suggestion through below channels
 
-- We'll explore recently introduced support for C# on Jupyter Notebook and features such as DataFrame.
+**Email :** praveenraghuvanshi@gmail.com
+**LinkedIn :** https://in.linkedin.com/in/praveenraghuvanshi
+**Github :** https://github.com/praveenraghuvanshi1512
+**Twitter :** @praveenraghuvan
 
-- Notebook Link: [COVID-19-mlnet.ipynb](./COVID-19-mlnet.ipynb)
-
-- [NBViewer Link](https://nbviewer.jupyter.org/github/praveenraghuvanshi1512/covid-19/blob/master/COVID-19-mlnet.ipynb)
-
-- [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/praveenraghuvanshi1512/covid-19/master) File is located at Notebooks/COVID-19-mlnet.ipynb
-
-  
-
-Please share your feedback/suggestion
-
-# Stay Safe Stay Home 
-
-
-
+# Stay Safe
