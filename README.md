@@ -6,15 +6,16 @@
 
 - In this tutorial, we'll perform analysis on COVID-19 dataset and visualize the trends of virus spread in various countries
 - Tutorial is divided into below parts
-  - **Part-1:** [COVID-19 Data Analysis using .Net DataFrame API](https://github.com/praveenraghuvanshi1512/covid-19/blob/Part-2/part-1/Part-1-COVID-19-mlnet-analysis.ipynb)
-  - **Part-2:** [COVID-19 Prediction using ML.Net framework](https://github.com/praveenraghuvanshi1512/covid-19/blob/Part-2/part-2/Part-2-COVID-19-mlnet-prediction.ipynb)
+  - **Part-1:** [COVID-19 Data Analysis using .Net DataFrame API](https://github.com/praveenraghuvanshi1512/covid-19/tree/master/part-1)
+  - **Part-2:** [COVID-19 Prediction using ML.Net framework](https://github.com/praveenraghuvanshi1512/covid-19/tree/master/part-2)
 - We'll leverage recently introduced support for C# in Jupyter Notebook
 
 Please share your feedback/suggestion through below channels
 
-**Email :** praveenraghuvanshi@gmail.com
 **LinkedIn :** https://in.linkedin.com/in/praveenraghuvanshi
+
 **Github :** https://github.com/praveenraghuvanshi1512
+
 **Twitter :** @praveenraghuvan
 
 # Stay Safe
