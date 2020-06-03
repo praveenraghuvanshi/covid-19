@@ -34,7 +34,7 @@ For overview, please refer below links
 - [An Introduction to DataFrame](https://devblogs.microsoft.com/dotnet/an-introduction-to-dataframe/)
 - [Exploring the C# Dataframe API](https://www.youtube.com/watch?v=FI3VxXClJ7Y)
 
-[**Part-2**](https://praveenraghuvanshi1512.github.io/part-2) covers time series analysis and prediction using ML.Net  
+[**Part-2**](../part-2) covers time series analysis and prediction using ML.Net  
 
 ### Summary
 
@@ -612,13 +612,13 @@ display(Chart.Plot(
 ));
 ```
 
-<img src="assets\pie-confirmed-recovered-deaths-india" alt="India - Confirmed Vs Recovered Vs Deaths" style="zoom:80%;" />
+<img src="assets\pie-confirmed-recovered-deaths-india.png" alt="India - Confirmed Vs Recovered Vs Deaths" style="zoom:80%;" />
 
 
 
 ## Conclusion
 
-I hope you have enjoyed reading the notebook, and might have got some idea on the powerful features of DataFrame in .Net. Data science capabilities are emerging fast in the .Net ecosystem which abstracts lot of complexity present in the field. The focus of this notebook is data analysis and there is nothing present from a Machine Learning perspective such as making a prediction. In [Part-2](https://praveenraghuvanshi1512.github.io/part-2), I have done time series analysis and predictions using ML.Net 
+I hope you have enjoyed reading the notebook, and might have got some idea on the powerful features of DataFrame in .Net. Data science capabilities are emerging fast in the .Net ecosystem which abstracts lot of complexity present in the field. The focus of this notebook is data analysis and there is nothing present from a Machine Learning perspective such as making a prediction. In [Part-2](../part-2), I have done time series analysis and predictions using ML.Net 
 
 Feedback/Suggestion are welcome. Please reach out to me through below channels
 
