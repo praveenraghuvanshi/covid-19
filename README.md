@@ -10,6 +10,8 @@
   - **Part-2:** [COVID-19 Prediction using ML.Net framework](https://github.com/praveenraghuvanshi1512/covid-19/tree/master/part-2)
 - We'll leverage recently introduced support for C# in Jupyter Notebook
 
+In case you prefer reading as an article, it has been published on [Dev.to](https://dev.to/praveenraghuvanshi/covid-19-eda-and-prediction-using-net-dataframe-and-ml-net-c-introduction-nlb)
+
 Please share your feedback/suggestion through below channels
 
 **LinkedIn :** https://in.linkedin.com/in/praveenraghuvanshi
@@ -17,5 +19,7 @@ Please share your feedback/suggestion through below channels
 **Github :** https://github.com/praveenraghuvanshi1512
 
 **Twitter :** @praveenraghuvan
+
+I am running an unofficial telegram group for ML.Net enthusiasts, please feel free to join it at https://t.me/joinchat/IifUJQ_PuYT757Turx-nLg
 
 # Stay Safe
