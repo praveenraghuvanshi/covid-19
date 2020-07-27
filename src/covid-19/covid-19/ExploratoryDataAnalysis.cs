@@ -65,18 +65,28 @@ namespace covid_19
 
             // Default Rows
             var topDefaultRows = covid19Dataframe;
+            Console.WriteLine("------- Top Default(10) Rows -------");
+            topDefaultRows.PrettyPrint();
 
             // Top 5 Rows
             var topRows = covid19Dataframe.Head(5);
+            Console.WriteLine("------- Head: Top Rows(5) -------");
+            topRows.PrettyPrint();
 
             // Random 6 Rows 
             var randomRows = covid19Dataframe.Sample(6);
+            Console.WriteLine("------- Sample: Random Rows(6) -------");
+            randomRows.PrettyPrint();
 
             // Description
             var description = covid19Dataframe.Description();
+            Console.WriteLine("------- Description -------");
+            description.PrettyPrint();
 
             // Information
             var information = covid19Dataframe.Info();
+            Console.WriteLine("------- Information -------");
+            information.PrettyPrint();
 
             #endregion
 
@@ -87,14 +97,16 @@ namespace covid_19
             // Filter : Gets active records with negative values
             PrimitiveDataFrameColumn<bool> invalidActiveFilter = covid19Dataframe.Columns[ACTIVE].ElementwiseLessThan(0.0);
             var invalidActiveDataFrame = covid19Dataframe.Filter(invalidActiveFilter);
-            Console.WriteLine(invalidActiveDataFrame);
+            Console.WriteLine("------- Invalid Active cases - Before Removal -------");
+            invalidActiveDataFrame.PrettyPrint();
 
             // Active(-13) = Confirmed(10) - Deaths(51) - Recovered(0)
 
             // Remove invalid active cases by applying filter
             PrimitiveDataFrameColumn<bool> activeFilter = covid19Dataframe.Columns[ACTIVE].ElementwiseGreaterThanOrEqual(0.0);
             covid19Dataframe = covid19Dataframe.Filter(activeFilter);
-            Console.WriteLine(covid19Dataframe.Description());
+            Console.WriteLine("------- Invalid Active cases - After Removal -------");
+            covid19Dataframe.Description().PrettyPrint();
 
             #endregion
 
@@ -112,12 +124,12 @@ namespace covid_19
             // Gets the sum of collection by using Sum method of DataFrame
             var totalConfirmed = Convert.ToDouble(confirmed.Sum());
             var totalDeaths = Convert.ToDouble(deaths.Sum());
-            var totaRecovered = Convert.ToDouble(recovered.Sum());
+            var totalRecovered = Convert.ToDouble(recovered.Sum());
 
             var confirmedVsDeathsVsRecoveredPlot = Chart.Plot(
                 new Graph.Pie()
                 {
-                    values = new double[] { totalConfirmed, totalDeaths, totaRecovered },
+                    values = new double[] { totalConfirmed, totalDeaths, totalRecovered },
                     labels = new string[] { CONFIRMED, DEATHS, RECOVERED }
                 }
             );
@@ -219,6 +231,14 @@ namespace covid_19
             var indiaTotalConfirmed = Convert.ToDouble(indiaConfirmed.Sum());
             var indiaTotalDeaths = Convert.ToDouble(indiaDeaths.Sum());
             var indiaTotalRecovered = Convert.ToDouble(indiaRecovered.Sum());
+
+            chart = Chart.Plot(
+                new Graph.Pie()
+                {
+                    values = new double[] { indiaTotalConfirmed, indiaTotalDeaths, indiaTotalRecovered },
+                    labels = new string[] { CONFIRMED, DEATHS, RECOVERED }
+                }
+            );
 
             #endregion
 
