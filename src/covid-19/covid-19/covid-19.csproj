@@ -9,11 +9,16 @@
   <ItemGroup>
     <PackageReference Include="FSharp.Core" Version="4.7.2" />
     <PackageReference Include="Microsoft.Data.Analysis" Version="0.4.0" />
+    <PackageReference Include="Microsoft.ML" Version="1.5.1" />
+    <PackageReference Include="Microsoft.ML.TimeSeries" Version="1.5.1" />
     <PackageReference Include="XPlot.Plotly" Version="3.0.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="05-27-2020_new.csv">
+    <None Update="data\05-27-2020_new.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="data\time_series_covid19_confirmed_global_transposed.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

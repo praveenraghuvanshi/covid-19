@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using Microsoft.Data.Analysis;
 
-namespace covid_19
+namespace covid_19.utilities
 {
     /// <summary>
     /// Utility functions for DataFrame

@@ -3,12 +3,13 @@ using XPlot.Plotly;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using covid_19.utilities;
 
-namespace covid_19
+namespace covid_19.eda
 {
     public class ExploratoryDataAnalysis
     {
-        string newFileName = "05-27-2020_new.csv";
+        string dataFile = @"data\05-27-2020_new.csv";
 
         #region Column Names
 
@@ -45,7 +46,7 @@ namespace covid_19
         {
             #region Load Dataset
 
-            var covid19Dataframe = DataFrame.LoadCsv(newFileName);
+            var covid19Dataframe = DataFrame.LoadCsv(dataFile);
 
             #endregion
 
