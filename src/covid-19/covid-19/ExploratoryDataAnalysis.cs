@@ -108,6 +108,20 @@ namespace covid_19
             Console.WriteLine("------- Invalid Active cases - After Removal -------");
             covid19Dataframe.Description().PrettyPrint();
 
+            // Remove extra columns
+            string[] requiredColumns = {
+                COUNTRY,
+                LAST_UPDATE,
+                CONFIRMED,
+                DEATHS,
+                RECOVERED,
+                ACTIVE
+            };
+
+            covid19Dataframe.RemoveAllColumnsExcept(excludedColumnNames: requiredColumns);
+            Console.WriteLine("------- Filtered columns -------");
+            covid19Dataframe.PrettyPrint();
+
             #endregion
 
             #region Visualization
@@ -134,6 +148,8 @@ namespace covid_19
                 }
             );
 
+            confirmedVsDeathsVsRecoveredPlot.WithTitle("Confirmed Vs Deaths Vs Recovered cases");
+
             #endregion
 
             #region Top 5 Countries with Confirmed cases
@@ -155,7 +171,6 @@ namespace covid_19
                 confirmedCases.Add(Convert.ToInt64(topConfirmedCasesByCountry[index]));
             }
 
-            var title = "Top 5 Countries : Confirmed";
             var series1 = new Graph.Bar
             {
                 x = countries.ToArray(),
@@ -163,7 +178,7 @@ namespace covid_19
             };
 
             var chart = Chart.Plot(new[] { series1 });
-            chart.WithTitle(title);
+            chart.WithTitle("Top 5 Countries: Confirmed");
             // display(chart);
 
             #endregion
@@ -200,7 +215,6 @@ namespace covid_19
                 recoveredCases.Add(Convert.ToInt64(topRecoveredCasesByCountry[index]));
             }
 
-            title = "Top 5 Countries : Recovered";
             series1 = new Graph.Bar
             {
                 x = countries.ToArray(),
@@ -208,7 +222,7 @@ namespace covid_19
             };
 
             chart = Chart.Plot(new[] { series1 });
-            chart.WithTitle(title);
+            chart.WithTitle("Top 5 Countries : Recovered");
             // display(chart);
 
             #endregion
@@ -232,17 +246,43 @@ namespace covid_19
             var indiaTotalDeaths = Convert.ToDouble(indiaDeaths.Sum());
             var indiaTotalRecovered = Convert.ToDouble(indiaRecovered.Sum());
 
-            chart = Chart.Plot(
+            var indiaConfirmedVsDeathsVsRecoveredChart = Chart.Plot(
                 new Graph.Pie()
                 {
                     values = new double[] { indiaTotalConfirmed, indiaTotalDeaths, indiaTotalRecovered },
                     labels = new string[] { CONFIRMED, DEATHS, RECOVERED }
                 }
             );
+            indiaConfirmedVsDeathsVsRecoveredChart.WithTitle("India: Confirmed Vs Deaths Vs Recovered cases");
 
             #endregion
 
             #endregion
+
+            var world = countryConfirmedGroup;
+            countries.Clear();
+            List<string> worldConfirmedCases = new List<string>();
+            for (int index = 0; index < world.Columns[COUNTRY].Length; index++)
+            {
+                countries.Add(world.Columns[COUNTRY][index].ToString());
+                worldConfirmedCases.Add(world.Columns[CONFIRMED][index].ToString());
+            }
+
+            var locations = countryConfirmedGroup.Columns[COUNTRY];
+
+            var worldGeoPlot = Chart.Plot(
+                new Graph.Choropleth()
+                {
+                    locations = countries.ToArray(),
+                    z = worldConfirmedCases.ToArray(),
+                    locationmode = "World-wide Corona Confirmed",
+                    text = countryConfirmedGroup.Columns[COUNTRY],
+                    colorscale = "active",
+                    hoverinfo = COUNTRY,
+                    autocolorscale = true,
+                    
+                }
+                );
 
             #endregion
         }

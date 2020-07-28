@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using Microsoft.Data.Analysis;
 
@@ -11,7 +12,6 @@ namespace covid_19
     /// </summary>
     public static class DataFrameUtils
     {
-
         public static void PrettyPrint(this DataFrame df)
         {
             var sb = new StringBuilder();
@@ -66,5 +66,34 @@ namespace covid_19
             return resultColumn;
         }
 
+        /// <summary>
+        /// Remove specified columns from a DataFrame
+        /// </summary>
+        /// <param name="dataFrame">An instance of DataFrame</param>
+        /// <param name="toBeRemovedColumnNames">Name of columns to be removed</param>
+        public static void RemoveColumns(this DataFrame dataFrame, string[] toBeRemovedColumnNames)
+        {
+            foreach (var columnName in toBeRemovedColumnNames)
+            {
+                dataFrame.Columns.Remove(columnName);
+            }
+        }
+
+        /// <summary>
+        /// Remove columns from a DataFrame excluding the specified column names
+        /// </summary>
+        /// <param name="dataFrame">An instance of DataFrame</param>
+        /// <param name="excludedColumnNames">Name of columns to be excluded</param>
+        public static void RemoveAllColumnsExcept(this DataFrame dataFrame, string[] excludedColumnNames)
+        {
+            var columnNames = dataFrame.Columns.Select(col => col.Name).ToArray();
+            foreach (var columnName in columnNames)
+            {
+                if (excludedColumnNames.Contains(columnName) == false)
+                {
+                    dataFrame.Columns.Remove(columnName);
+                }
+            }
+        }
     }
 }
