@@ -7,6 +7,9 @@ using covid_19.utilities;
 
 namespace covid_19.eda
 {
+    /// <summary>
+    /// Performs exploratory data analysis 
+    /// </summary>
     public class ExploratoryDataAnalysis
     {
         string dataFile = @"data\05-27-2020_new.csv";
@@ -42,7 +45,10 @@ namespace covid_19.eda
 
         #endregion
 
-        public void Run()
+        /// <summary>
+        /// Performs exploratory data analysis EDA
+        /// </summary>
+        public void Analyze()
         {
             #region Load Dataset
 

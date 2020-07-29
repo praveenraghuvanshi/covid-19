@@ -15,7 +15,7 @@ namespace covid_19
             Console.WriteLine("Performing Exploratory Data Analysis\n");
 
             var exploratoryDataAnalysis = new ExploratoryDataAnalysis();
-            exploratoryDataAnalysis.Run();
+            exploratoryDataAnalysis.Analyze();
 
             Console.WriteLine("Exploratory Data Completed\n");
 
@@ -27,7 +27,7 @@ namespace covid_19
             Console.ReadKey();
 
             var timeSeriesPrediction = new TimeSeriesPrediction();
-            timeSeriesPrediction.Run();
+            timeSeriesPrediction.Forecast();
 
             Console.WriteLine("Time Series Prediction Completed\n");
 

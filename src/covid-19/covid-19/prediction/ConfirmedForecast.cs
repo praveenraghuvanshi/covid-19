@@ -13,5 +13,15 @@ namespace covid_19.prediction
         /// No of predicted confirmed cases for multiple days
         /// </summary>
         public float[] Forecast { get; set; }
+
+        /// <summary>
+        /// The predicted minimum values for the forecasted period.
+        /// </summary>
+        public float[] LowerBoundConfirmed { get; set; }
+
+        /// <summary>
+        /// The predicted maximum values for the forecasted period.
+        /// </summary>
+        public float[] UpperBoundConfirmed { get; set; }
     }
 }
