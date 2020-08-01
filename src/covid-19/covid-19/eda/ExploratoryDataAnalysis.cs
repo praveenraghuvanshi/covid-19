@@ -266,6 +266,8 @@ namespace covid_19.eda
 
             #endregion
 
+            #region World Map
+
             var world = countryConfirmedGroup;
             countries.Clear();
             List<string> worldConfirmedCases = new List<string>();
@@ -289,6 +291,8 @@ namespace covid_19.eda
                     autocolorscale = true,
                     
                 });
+
+            #endregion  
 
             #endregion
         }
