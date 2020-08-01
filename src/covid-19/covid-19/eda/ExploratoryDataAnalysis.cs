@@ -282,14 +282,13 @@ namespace covid_19.eda
                 {
                     locations = countries.ToArray(),
                     z = worldConfirmedCases.ToArray(),
-                    locationmode = "World-wide Corona Confirmed",
+                    locationmode = "country names",
                     text = countryConfirmedGroup.Columns[COUNTRY],
                     colorscale = "active",
                     hoverinfo = COUNTRY,
                     autocolorscale = true,
                     
-                }
-                );
+                });
 
             #endregion
         }
