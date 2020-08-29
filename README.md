@@ -24,4 +24,36 @@ Please share your feedback/suggestion through below channels
 
 I am running an unofficial telegram group for ML.Net enthusiasts, please feel free to join it at https://t.me/joinchat/IifUJQ_PuYT757Turx-nLg
 
+
+
+## Some generated plots
+
+1. Global: Confirmed Vs Recovered Vs Deaths
+
+   <img src=".\part-1\assets\pie-confirmed-recovered-deaths.png" alt="Global: Confirmed Vs Recovered Vs Deaths" style="zoom:80%;" />
+
+2. Confirmed cases : Top 5 Countries
+
+   <img src=".\part-1\assets\top-5-confirmed-countries-global.png" alt="Confirmed cases : Top 5 Countries" style="zoom:80%;" />
+
+3. Recovered cases: Top 5 Countries
+
+   <img src=".\part-1\assets\top-5-recovered-countries-global.png" alt="Recovered cases: Top 5 Countries" style="zoom:80%;" />
+
+4. Deaths: Top 5 Countries
+
+   <img src=".\part-1\assets\top-5-deaths-countries-global.png" alt="Deaths: Top 5 Countries" style="zoom:80%;" />
+
+5. India : Confirmed Vs Recovered Vs Deaths
+
+   <img src=".\part-1\assets\pie-confirmed-recovered-deaths-india.png" alt="India: Confirmed Vs Recovered Vs Deaths" style="zoom:80%;" />
+
+6. Prediction : Forecast of deaths overs 7 days
+
+   <img src=".\part-2\assets\prediction-time-series-deaths.png" alt="Prediction" style="zoom:80%;" />
+
+7. World map: Confirmed Cases
+
+   <img src=".\part-1\assets\world-map-confirmed.png" alt="World map - Confirmed cases" style="zoom:80%;" />
+
 # Stay Safe
